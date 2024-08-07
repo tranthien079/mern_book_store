@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const instance = axios.create({
-  baseURL: 'https://mern-book-store-be.onrender.com',
+  baseURL: import.meta.env.VITE_BACKEND_URL,
 });
 
 // Add global request interceptor
