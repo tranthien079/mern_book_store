@@ -1,5 +1,5 @@
 
-// const { createBookService, getBookService, updateBookService, deleteBookService } = require('../services/BookService');
+const { createBookService, getBookService, updateBookService, deleteBookService } = require('../services/bookService');
 
 const createBook = async (req, res) => {
     try {
