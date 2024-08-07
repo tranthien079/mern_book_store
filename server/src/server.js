@@ -25,7 +25,7 @@ configViewEngine(app);
 //khai báo route
 app.use('/v1/api/', userRouter);
 app.use('/v1/api/author/', authorRouter);
-// app.use('/v1/api/book/', bookRouter);
+app.use('/v1/api/book/', bookRouter);
 app.use('/v1/api/message/', messageRouter);
 
 // Cấu hình thư mục tĩnh
