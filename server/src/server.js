@@ -5,7 +5,7 @@ const express = require('express');
 const { getHomepage } = require('./controllers/homeController');
 const userRouter = require('./routes/userRouter');
 const authorRouter = require('./routes/authorRouter');
-// const bookRouter = require('./routes/bookRouter');
+const bookRouter = require('./routes/bookRouter');
 const messageRouter = require('./routes/messageRoute');
 const path = require('path');
 
