@@ -29,12 +29,12 @@ app.use('/v1/api/author/', authorRouter);
 app.use('/v1/api/message/', messageRouter);
 
 // Cấu hình thư mục tĩnh
-app.use(express.static(path.join(__dirname, 'client/dist')));
+// app.use(express.static(path.join(__dirname, 'client/dist')));
 
 // Cấu hình route catch-all để trả về index.html cho các yêu cầu không khớp
-app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '/client/dist/index.html'));
-});
+// app.get('*', (req, res) => {
+   // res.sendFile(path.join(__dirname, '/client/dist/index.html'));
+// });
 
 (async () => {
     try {
