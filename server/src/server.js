@@ -5,7 +5,7 @@ const express = require('express');
 const { getHomepage } = require('./controllers/homeController');
 const userRouter = require('./routes/userRouter');
 const authorRouter = require('./routes/authorRouter');
-const bookRouter = require('./routes/bookRouter');
+// const bookRouter = require('./routes/bookRouter');
 const messageRouter = require('./routes/messageRoute');
 const path = require('path');
 
@@ -25,7 +25,7 @@ configViewEngine(app);
 //khai báo route
 app.use('/v1/api/', userRouter);
 app.use('/v1/api/author/', authorRouter);
-app.use('/v1/api/book/', bookRouter);
+// app.use('/v1/api/book/', bookRouter);
 app.use('/v1/api/message/', messageRouter);
 
 // Cấu hình thư mục tĩnh
