@@ -8,7 +8,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
     cors: {
-        origin: ["https://mern-book-store-fe.onrender.com"],
+        origin: [process.env.CLIENT_URL],
         methods: ["GET", "POST"],
     },
 });
